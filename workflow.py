@@ -31,6 +31,40 @@ STAGE_MODEL = {
     'evaluation': 'GPT-5.4 mini',
 }
 
+
+SCENARIO_PARAMS = {
+    'base': {
+        'renewal_boost': 25,
+        'ticket_weight': 3,
+        'nps_weight': 4,
+        'usage_multiplier': 1.0,
+    },
+    'renewal_risk': {
+        'renewal_boost': 45,
+        'ticket_weight': 3,
+        'nps_weight': 4,
+        'usage_multiplier': 1.0,
+    },
+    'support_spike': {
+        'renewal_boost': 25,
+        'ticket_weight': 8,
+        'nps_weight': 4,
+        'usage_multiplier': 1.0,
+    },
+    'quality_batch': {
+        'renewal_boost': 25,
+        'ticket_weight': 3,
+        'nps_weight': 6,
+        'usage_multiplier': 1.0,
+    },
+    'segment_decline': {
+        'renewal_boost': 25,
+        'ticket_weight': 3,
+        'nps_weight': 4,
+        'usage_multiplier': 2.0,
+    },
+}
+
 PROMPTS = {
     'account_review': 'Review account health signals, usage trend, tickets, renewal date, NPS, and notes. Return risk score, drivers, opportunity flags, and recommended next action.',
     'prioritization': 'Rank accounts by action urgency and business impact. Prefer imminent renewals, sharp health decline, high contract value, negative sentiment, and open blockers.',
@@ -92,7 +126,7 @@ def build_context():
     return accounts, usage_by_account, tickets_by_account, calls_by_account, checkins, outputs, standards
 
 
-def risk_score(account, tickets, usage_rows):
+def risk_score(account, tickets, usage_rows, scenario_params):
     health = int(account['current_health_score'])
     previous = int(account['previous_health_score'])
     renewal = parse_date(account['renewal_date'])
@@ -100,13 +134,13 @@ def risk_score(account, tickets, usage_rows):
     days_to_renewal = (renewal - today).days if renewal else 999
     score = 100 - health
     score += max(0, previous - health) * 1.2
-    score += {'declining': 18, 'flat': 7, 'growing': -5}.get(account['product_usage_trend'], 0)
-    score += int(account['support_ticket_count_30d']) * 3
-    score += max(0, 7 - int(account['nps_score'])) * 4
+    score += {'declining': 18, 'flat': 7, 'growing': -5}.get(account['product_usage_trend'], 0) * scenario_params['usage_multiplier']
+    score += int(account['support_ticket_count_30d']) * scenario_params['ticket_weight']
+    score += max(0, 7 - int(account['nps_score'])) * scenario_params['nps_weight']
     if days_to_renewal <= 45:
-        score += 25
+        score += scenario_params['renewal_boost']
     elif days_to_renewal <= 90:
-        score += 12
+        score += round(scenario_params['renewal_boost'] * 0.48, 1)
     if any(t['severity'].lower() == 'high' for t in tickets):
         score += 20
     if account['expansion_signal'].lower() == 'high':
@@ -114,12 +148,12 @@ def risk_score(account, tickets, usage_rows):
     return max(0, round(score, 1))
 
 
-def review_accounts(accounts, usage_by_account, tickets_by_account, usage_log):
+def review_accounts(accounts, usage_by_account, tickets_by_account, usage_log, scenario_params):
     reviews = []
     for a in accounts:
         tickets = tickets_by_account[a['account_id']]
         usage_rows = usage_by_account[a['account_id']]
-        score = risk_score(a, tickets, usage_rows)
+        score = risk_score(a, tickets, usage_rows, scenario_params)
         risk_level = 'critical' if score >= 90 else 'high' if score >= 70 else 'medium' if score >= 45 else 'low'
         drivers = []
         if int(a['current_health_score']) < 65: drivers.append('low health score')
@@ -259,10 +293,11 @@ def evaluate(queue, usage_log):
 
 def run_workflow(run_id='base'):
     usage_log = []
+    scenario_params = SCENARIO_PARAMS.get(run_id, SCENARIO_PARAMS['base'])
     accounts, usage_by_account, tickets_by_account, calls_by_account, checkins, outputs, standards = build_context()
     account_lookup = {a['account_id']: a for a in accounts}
     record_usage('memory_retrieval', {'data_files': ['accounts','usage','tickets','calls','checkins','outputs','standards']}, {'records_loaded': sum([len(accounts), sum(map(len, usage_by_account.values())), sum(map(len, tickets_by_account.values())), len(checkins), len(outputs), len(standards)])}, usage_log)
-    reviews = review_accounts(accounts, usage_by_account, tickets_by_account, usage_log)
+    reviews = review_accounts(accounts, usage_by_account, tickets_by_account, usage_log, scenario_params)
     top = prioritize(reviews, usage_log)
     ticket_routes = handle_tickets(tickets_by_account, account_lookup, usage_log)
     checkin_plans = prepare_checkins(checkins, account_lookup, calls_by_account, ticket_routes, usage_log)
@@ -274,6 +309,7 @@ def run_workflow(run_id='base'):
     result = {
         'run_id': run_id,
         'generated_at': '2026-05-01T09:00:00',
+        'scenario_params': scenario_params,
         'account_reviews': reviews,
         'priority_accounts': top,
         'ticket_routes': ticket_routes,
