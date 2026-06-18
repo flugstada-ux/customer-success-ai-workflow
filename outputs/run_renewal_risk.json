@@ -1,0 +1,1175 @@
+{
+  "run_id": "renewal_risk",
+  "generated_at": "2026-05-01T09:00:00",
+  "account_reviews": [
+    {
+      "account_id": "A001",
+      "account_name": "Acme Retail",
+      "segment": "Mid-Market",
+      "contract_value": 42000,
+      "risk_score": 84.8,
+      "risk_level": "high",
+      "drivers": [
+        "declining usage"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "CSM follow up within 2 business days",
+      "owner": "Taylor Chen"
+    },
+    {
+      "account_id": "A002",
+      "account_name": "BrightPath Logistics",
+      "segment": "Enterprise",
+      "contract_value": 128000,
+      "risk_score": 120.6,
+      "risk_level": "critical",
+      "drivers": [
+        "low health score",
+        "ticket load",
+        "low NPS",
+        "high severity open issue"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Taylor Chen"
+    },
+    {
+      "account_id": "A003",
+      "account_name": "Cobalt Health",
+      "segment": "Enterprise",
+      "contract_value": 210000,
+      "risk_score": 2.0,
+      "risk_level": "low",
+      "drivers": [],
+      "expansion_opportunity": true,
+      "recommended_next_action": "prepare expansion conversation",
+      "owner": "Morgan Lee"
+    },
+    {
+      "account_id": "A004",
+      "account_name": "DeltaEd Services",
+      "segment": "SMB",
+      "contract_value": 18000,
+      "risk_score": 117.8,
+      "risk_level": "critical",
+      "drivers": [
+        "low health score",
+        "health decline",
+        "declining usage",
+        "ticket load",
+        "low NPS"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Riley Patel"
+    },
+    {
+      "account_id": "A005",
+      "account_name": "Evergreen Finance",
+      "segment": "Enterprise",
+      "contract_value": 175000,
+      "risk_score": 123.8,
+      "risk_level": "critical",
+      "drivers": [
+        "declining usage",
+        "high severity open issue"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Morgan Lee"
+    },
+    {
+      "account_id": "A006",
+      "account_name": "Futura Robotics",
+      "segment": "Mid-Market",
+      "contract_value": 65000,
+      "risk_score": 11.0,
+      "risk_level": "low",
+      "drivers": [],
+      "expansion_opportunity": true,
+      "recommended_next_action": "prepare expansion conversation",
+      "owner": "Riley Patel"
+    },
+    {
+      "account_id": "A007",
+      "account_name": "GreenLeaf Foods",
+      "segment": "SMB",
+      "contract_value": 22000,
+      "risk_score": 33.4,
+      "risk_level": "low",
+      "drivers": [],
+      "expansion_opportunity": true,
+      "recommended_next_action": "prepare expansion conversation",
+      "owner": "Taylor Chen"
+    },
+    {
+      "account_id": "A008",
+      "account_name": "Harbor Insurance",
+      "segment": "Enterprise",
+      "contract_value": 240000,
+      "risk_score": 183.6,
+      "risk_level": "critical",
+      "drivers": [
+        "low health score",
+        "health decline",
+        "declining usage",
+        "ticket load",
+        "low NPS",
+        "high severity open issue"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Morgan Lee"
+    },
+    {
+      "account_id": "A009",
+      "account_name": "Indigo Studios",
+      "segment": "SMB",
+      "contract_value": 12000,
+      "risk_score": 49.2,
+      "risk_level": "medium",
+      "drivers": [],
+      "expansion_opportunity": false,
+      "recommended_next_action": "monitor",
+      "owner": "Riley Patel"
+    },
+    {
+      "account_id": "A010",
+      "account_name": "Juniper Manufacturing",
+      "segment": "Mid-Market",
+      "contract_value": 74000,
+      "risk_score": 104.0,
+      "risk_level": "critical",
+      "drivers": [
+        "low health score",
+        "declining usage",
+        "ticket load"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Taylor Chen"
+    },
+    {
+      "account_id": "A011",
+      "account_name": "Keystone Legal",
+      "segment": "Mid-Market",
+      "contract_value": 56000,
+      "risk_score": 6.0,
+      "risk_level": "low",
+      "drivers": [],
+      "expansion_opportunity": true,
+      "recommended_next_action": "prepare expansion conversation",
+      "owner": "Morgan Lee"
+    },
+    {
+      "account_id": "A012",
+      "account_name": "Lumen Energy",
+      "segment": "Enterprise",
+      "contract_value": 190000,
+      "risk_score": 80.0,
+      "risk_level": "high",
+      "drivers": [
+        "low health score",
+        "ticket load",
+        "low NPS"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "CSM follow up within 2 business days",
+      "owner": "Riley Patel"
+    },
+    {
+      "account_id": "A013",
+      "account_name": "Mosaic Labs",
+      "segment": "SMB",
+      "contract_value": 15000,
+      "risk_score": 4.0,
+      "risk_level": "low",
+      "drivers": [],
+      "expansion_opportunity": true,
+      "recommended_next_action": "prepare expansion conversation",
+      "owner": "Taylor Chen"
+    },
+    {
+      "account_id": "A014",
+      "account_name": "Northstar Travel",
+      "segment": "Mid-Market",
+      "contract_value": 83000,
+      "risk_score": 141.8,
+      "risk_level": "critical",
+      "drivers": [
+        "low health score",
+        "health decline",
+        "declining usage",
+        "low NPS"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Morgan Lee"
+    },
+    {
+      "account_id": "A015",
+      "account_name": "Orchid Telecom",
+      "segment": "Enterprise",
+      "contract_value": 300000,
+      "risk_score": 36.0,
+      "risk_level": "low",
+      "drivers": [],
+      "expansion_opportunity": true,
+      "recommended_next_action": "prepare expansion conversation",
+      "owner": "Riley Patel"
+    },
+    {
+      "account_id": "A016",
+      "account_name": "Pioneer Biotech",
+      "segment": "Mid-Market",
+      "contract_value": 69000,
+      "risk_score": 54.0,
+      "risk_level": "medium",
+      "drivers": [],
+      "expansion_opportunity": true,
+      "recommended_next_action": "prepare expansion conversation",
+      "owner": "Taylor Chen"
+    },
+    {
+      "account_id": "A017",
+      "account_name": "Quartz Media",
+      "segment": "SMB",
+      "contract_value": 16000,
+      "risk_score": 163.6,
+      "risk_level": "critical",
+      "drivers": [
+        "low health score",
+        "health decline",
+        "declining usage",
+        "ticket load",
+        "low NPS",
+        "high severity open issue"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Morgan Lee"
+    },
+    {
+      "account_id": "A018",
+      "account_name": "Redwood Cloud",
+      "segment": "Enterprise",
+      "contract_value": 260000,
+      "risk_score": 7.0,
+      "risk_level": "low",
+      "drivers": [],
+      "expansion_opportunity": true,
+      "recommended_next_action": "prepare expansion conversation",
+      "owner": "Riley Patel"
+    }
+  ],
+  "priority_accounts": [
+    {
+      "account_id": "A008",
+      "account_name": "Harbor Insurance",
+      "segment": "Enterprise",
+      "contract_value": 240000,
+      "risk_score": 183.6,
+      "risk_level": "critical",
+      "drivers": [
+        "low health score",
+        "health decline",
+        "declining usage",
+        "ticket load",
+        "low NPS",
+        "high severity open issue"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Morgan Lee"
+    },
+    {
+      "account_id": "A017",
+      "account_name": "Quartz Media",
+      "segment": "SMB",
+      "contract_value": 16000,
+      "risk_score": 163.6,
+      "risk_level": "critical",
+      "drivers": [
+        "low health score",
+        "health decline",
+        "declining usage",
+        "ticket load",
+        "low NPS",
+        "high severity open issue"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Morgan Lee"
+    },
+    {
+      "account_id": "A014",
+      "account_name": "Northstar Travel",
+      "segment": "Mid-Market",
+      "contract_value": 83000,
+      "risk_score": 141.8,
+      "risk_level": "critical",
+      "drivers": [
+        "low health score",
+        "health decline",
+        "declining usage",
+        "low NPS"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Morgan Lee"
+    },
+    {
+      "account_id": "A005",
+      "account_name": "Evergreen Finance",
+      "segment": "Enterprise",
+      "contract_value": 175000,
+      "risk_score": 123.8,
+      "risk_level": "critical",
+      "drivers": [
+        "declining usage",
+        "high severity open issue"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Morgan Lee"
+    },
+    {
+      "account_id": "A002",
+      "account_name": "BrightPath Logistics",
+      "segment": "Enterprise",
+      "contract_value": 128000,
+      "risk_score": 120.6,
+      "risk_level": "critical",
+      "drivers": [
+        "low health score",
+        "ticket load",
+        "low NPS",
+        "high severity open issue"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Taylor Chen"
+    },
+    {
+      "account_id": "A004",
+      "account_name": "DeltaEd Services",
+      "segment": "SMB",
+      "contract_value": 18000,
+      "risk_score": 117.8,
+      "risk_level": "critical",
+      "drivers": [
+        "low health score",
+        "health decline",
+        "declining usage",
+        "ticket load",
+        "low NPS"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Riley Patel"
+    },
+    {
+      "account_id": "A010",
+      "account_name": "Juniper Manufacturing",
+      "segment": "Mid-Market",
+      "contract_value": 74000,
+      "risk_score": 104.0,
+      "risk_level": "critical",
+      "drivers": [
+        "low health score",
+        "declining usage",
+        "ticket load"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "escalate recovery plan",
+      "owner": "Taylor Chen"
+    },
+    {
+      "account_id": "A001",
+      "account_name": "Acme Retail",
+      "segment": "Mid-Market",
+      "contract_value": 42000,
+      "risk_score": 84.8,
+      "risk_level": "high",
+      "drivers": [
+        "declining usage"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "CSM follow up within 2 business days",
+      "owner": "Taylor Chen"
+    },
+    {
+      "account_id": "A012",
+      "account_name": "Lumen Energy",
+      "segment": "Enterprise",
+      "contract_value": 190000,
+      "risk_score": 80.0,
+      "risk_level": "high",
+      "drivers": [
+        "low health score",
+        "ticket load",
+        "low NPS"
+      ],
+      "expansion_opportunity": false,
+      "recommended_next_action": "CSM follow up within 2 business days",
+      "owner": "Riley Patel"
+    },
+    {
+      "account_id": "A016",
+      "account_name": "Pioneer Biotech",
+      "segment": "Mid-Market",
+      "contract_value": 69000,
+      "risk_score": 54.0,
+      "risk_level": "medium",
+      "drivers": [],
+      "expansion_opportunity": true,
+      "recommended_next_action": "prepare expansion conversation",
+      "owner": "Taylor Chen"
+    }
+  ],
+  "ticket_routes": [
+    {
+      "ticket_id": "T001",
+      "account_id": "A008",
+      "account_name": "Harbor Insurance",
+      "issue_summary": "Executive sponsor says implementation is blocked by SSO failures",
+      "severity": "High",
+      "sentiment": "frustrated",
+      "route": "escalation",
+      "owner": "Support engineering plus CSM",
+      "customer_response": "Acknowledge the issue, confirm current owner is Support engineering plus CSM, and provide next update timing."
+    },
+    {
+      "ticket_id": "T002",
+      "account_id": "A002",
+      "account_name": "BrightPath Logistics",
+      "issue_summary": "Customer asks why integration sync has failed three times this week",
+      "severity": "High",
+      "sentiment": "concerned",
+      "route": "escalation",
+      "owner": "Support engineering plus CSM",
+      "customer_response": "Acknowledge the issue, confirm current owner is Support engineering plus CSM, and provide next update timing."
+    },
+    {
+      "ticket_id": "T003",
+      "account_id": "A014",
+      "account_name": "Northstar Travel",
+      "issue_summary": "Admin reports mobile users cannot complete onboarding steps",
+      "severity": "Medium",
+      "sentiment": "negative",
+      "route": "escalation",
+      "owner": "Support engineering plus CSM",
+      "customer_response": "Acknowledge the issue, confirm current owner is Support engineering plus CSM, and provide next update timing."
+    },
+    {
+      "ticket_id": "T004",
+      "account_id": "A010",
+      "account_name": "Juniper Manufacturing",
+      "issue_summary": "Power user wants help interpreting usage dashboard drop",
+      "severity": "Medium",
+      "sentiment": "neutral",
+      "route": "immediate resolution",
+      "owner": "Frontline support",
+      "customer_response": "Acknowledge the issue, confirm current owner is Frontline support, and provide next update timing."
+    },
+    {
+      "ticket_id": "T005",
+      "account_id": "A012",
+      "account_name": "Lumen Energy",
+      "issue_summary": "Customer opened several how-to questions about advanced permissions",
+      "severity": "Low",
+      "sentiment": "neutral",
+      "route": "immediate resolution",
+      "owner": "Frontline support",
+      "customer_response": "Acknowledge the issue, confirm current owner is Frontline support, and provide next update timing."
+    },
+    {
+      "ticket_id": "T006",
+      "account_id": "A017",
+      "account_name": "Quartz Media",
+      "issue_summary": "Customer says team has stopped using the platform and needs a reset",
+      "severity": "High",
+      "sentiment": "negative",
+      "route": "escalation",
+      "owner": "Support engineering plus CSM",
+      "customer_response": "Acknowledge the issue, confirm current owner is Support engineering plus CSM, and provide next update timing."
+    },
+    {
+      "ticket_id": "T007",
+      "account_id": "A005",
+      "account_name": "Evergreen Finance",
+      "issue_summary": "Executive sponsor requests renewal usage summary by Friday",
+      "severity": "High",
+      "sentiment": "concerned",
+      "route": "escalation",
+      "owner": "Support engineering plus CSM",
+      "customer_response": "Acknowledge the issue, confirm current owner is Support engineering plus CSM, and provide next update timing."
+    },
+    {
+      "ticket_id": "T008",
+      "account_id": "A004",
+      "account_name": "DeltaEd Services",
+      "issue_summary": "New admin asks for onboarding materials after former champion left",
+      "severity": "Medium",
+      "sentiment": "neutral",
+      "route": "immediate resolution",
+      "owner": "Frontline support",
+      "customer_response": "Acknowledge the issue, confirm current owner is Frontline support, and provide next update timing."
+    },
+    {
+      "ticket_id": "T009",
+      "account_id": "A015",
+      "account_name": "Orchid Telecom",
+      "issue_summary": "Platform team asks for update on integration roadmap",
+      "severity": "Medium",
+      "sentiment": "neutral",
+      "route": "immediate resolution",
+      "owner": "Frontline support",
+      "customer_response": "Acknowledge the issue, confirm current owner is Frontline support, and provide next update timing."
+    },
+    {
+      "ticket_id": "T010",
+      "account_id": "A001",
+      "account_name": "Acme Retail",
+      "issue_summary": "Customer asks why dashboard exports are missing recent data",
+      "severity": "Medium",
+      "sentiment": "frustrated",
+      "route": "scheduled follow up",
+      "owner": "Taylor Chen",
+      "customer_response": "Acknowledge the issue, confirm current owner is Taylor Chen, and provide next update timing."
+    },
+    {
+      "ticket_id": "T011",
+      "account_id": "A006",
+      "account_name": "Futura Robotics",
+      "issue_summary": "Customer asks about premium automation feature limits",
+      "severity": "Low",
+      "sentiment": "positive",
+      "route": "immediate resolution",
+      "owner": "Frontline support",
+      "customer_response": "Acknowledge the issue, confirm current owner is Frontline support, and provide next update timing."
+    },
+    {
+      "ticket_id": "T012",
+      "account_id": "A003",
+      "account_name": "Cobalt Health",
+      "issue_summary": "Analytics team asks for best-practice setup for new department",
+      "severity": "Low",
+      "sentiment": "positive",
+      "route": "immediate resolution",
+      "owner": "Frontline support",
+      "customer_response": "Acknowledge the issue, confirm current owner is Frontline support, and provide next update timing."
+    }
+  ],
+  "checkin_plans": [
+    {
+      "checkin_id": "C001",
+      "account_name": "Harbor Insurance",
+      "date": "2026-05-04",
+      "priority": "High",
+      "agenda": "SSO status, rollout unblock plan, executive confidence",
+      "opening_context": "Implementation progress review",
+      "customer_goal": "Resolve SSO and complete rollout",
+      "known_risks": [
+        "SSO blockers delaying launch",
+        "Executive sponsor says implementation is blocked by SSO failures"
+      ],
+      "recommended_follow_up": "CSM to coordinate technical escalation"
+    },
+    {
+      "checkin_id": "C002",
+      "account_name": "Evergreen Finance",
+      "date": "2026-05-05",
+      "priority": "High",
+      "agenda": "ROI summary, adoption proof, renewal risk",
+      "opening_context": "Renewal check-in",
+      "customer_goal": "Demonstrate measurable usage value",
+      "known_risks": [
+        "Sponsor wants concise ROI summary",
+        "Executive sponsor requests renewal usage summary by Friday"
+      ],
+      "recommended_follow_up": "Prepare renewal value snapshot"
+    },
+    {
+      "checkin_id": "C003",
+      "account_name": "Northstar Travel",
+      "date": "2026-05-05",
+      "priority": "High",
+      "agenda": "Mobile onboarding issue, renewal timeline",
+      "opening_context": "Mobile adoption check",
+      "customer_goal": "Increase field-team onboarding",
+      "known_risks": [
+        "Mobile onboarding friction",
+        "Admin reports mobile users cannot complete onboarding steps"
+      ],
+      "recommended_follow_up": "Send mobile onboarding plan"
+    },
+    {
+      "checkin_id": "C004",
+      "account_name": "Cobalt Health",
+      "date": "2026-05-06",
+      "priority": "Medium",
+      "agenda": "New department rollout, best-practice setup",
+      "opening_context": "Expansion discussion",
+      "customer_goal": "Roll platform out to analytics team",
+      "known_risks": [
+        "Need best-practice configuration"
+      ],
+      "recommended_follow_up": "Share rollout plan"
+    },
+    {
+      "checkin_id": "C005",
+      "account_name": "Futura Robotics",
+      "date": "2026-05-06",
+      "priority": "Medium",
+      "agenda": "Automation limits, premium use cases",
+      "opening_context": "Automation review",
+      "customer_goal": "Assess premium automation use case",
+      "known_risks": [
+        "Budget approval needed"
+      ],
+      "recommended_follow_up": "Send premium automation options"
+    },
+    {
+      "checkin_id": "C006",
+      "account_name": "Juniper Manufacturing",
+      "date": "2026-05-07",
+      "priority": "Medium",
+      "agenda": "Reporting usage drop, export data trust",
+      "opening_context": "Usage dashboard review",
+      "customer_goal": "Understand drop in reporting usage",
+      "known_risks": [
+        "Report exports not trusted"
+      ],
+      "recommended_follow_up": "Investigate data freshness issue"
+    },
+    {
+      "checkin_id": "C007",
+      "account_name": "Quartz Media",
+      "date": "2026-05-07",
+      "priority": "High",
+      "agenda": "Champion gap, platform value, reactivation",
+      "opening_context": "Reactivation call",
+      "customer_goal": "Rebuild use case and assign owner",
+      "known_risks": [
+        "No clear champion",
+        "Customer says team has stopped using the platform and needs a reset"
+      ],
+      "recommended_follow_up": "Identify new sponsor and propose reset"
+    },
+    {
+      "checkin_id": "C008",
+      "account_name": "Orchid Telecom",
+      "date": "2026-05-08",
+      "priority": "Medium",
+      "agenda": "Roadmap dependency, strategic relationship",
+      "opening_context": "Roadmap alignment",
+      "customer_goal": "Confirm integrations roadmap",
+      "known_risks": [
+        "Roadmap dependency for next rollout"
+      ],
+      "recommended_follow_up": "Escalate roadmap question to product"
+    },
+    {
+      "checkin_id": "C009",
+      "account_name": "Lumen Energy",
+      "date": "2026-05-08",
+      "priority": "Low",
+      "agenda": "Admin training, permissions confusion",
+      "opening_context": "Permissions troubleshooting",
+      "customer_goal": "Reduce admin confusion",
+      "known_risks": [
+        "Permission model unclear"
+      ],
+      "recommended_follow_up": "Provide permissions guide"
+    },
+    {
+      "checkin_id": "C010",
+      "account_name": "Redwood Cloud",
+      "date": "2026-05-11",
+      "priority": "Medium",
+      "agenda": "Governance plan, multi-team adoption",
+      "opening_context": "Expansion exploration",
+      "customer_goal": "Assess multi-team rollout",
+      "known_risks": [
+        "Need governance plan"
+      ],
+      "recommended_follow_up": "Draft phased rollout approach"
+    },
+    {
+      "checkin_id": "C011",
+      "account_name": "Acme Retail",
+      "date": "2026-05-11",
+      "priority": "Medium",
+      "agenda": "Dashboard export issue, adoption decline",
+      "opening_context": "Reporting workflow review",
+      "customer_goal": "Restore reporting adoption",
+      "known_risks": [
+        "Missing dashboard exports"
+      ],
+      "recommended_follow_up": "Investigate reporting data issue"
+    },
+    {
+      "checkin_id": "C012",
+      "account_name": "BrightPath Logistics",
+      "date": "2026-05-12",
+      "priority": "High",
+      "agenda": "Sync failures, technical escalation",
+      "opening_context": "Integration stability call",
+      "customer_goal": "Stabilize data sync",
+      "known_risks": [
+        "Repeated sync failures",
+        "Customer asks why integration sync has failed three times this week"
+      ],
+      "recommended_follow_up": "Escalate integration logs"
+    }
+  ],
+  "quality_reviews": [
+    {
+      "output_id": "O001",
+      "account_id": "A008",
+      "output_type": "Executive update draft",
+      "status": "needs revision",
+      "findings": [
+        "Missing account-specific reference",
+        "Too generic for customer-facing use"
+      ],
+      "standards_checked": [
+        "QS001",
+        "QS002",
+        "QS003",
+        "QS005"
+      ],
+      "revised_version": "Harbor Insurance: We see High-value account with severe implementation blockers. Next step: assign the owner, confirm timing, and send a measurable update tied to reassure executive sponsor and set recovery plan."
+    },
+    {
+      "output_id": "O002",
+      "account_id": "A005",
+      "output_type": "Renewal summary",
+      "status": "needs revision",
+      "findings": [
+        "Missing account-specific reference",
+        "No concrete timing or owner",
+        "Too generic for customer-facing use"
+      ],
+      "standards_checked": [
+        "QS001",
+        "QS002",
+        "QS004"
+      ],
+      "revised_version": "Evergreen Finance: We see Renewal soon; exec sponsor requested usage review. Next step: assign the owner, confirm timing, and send a measurable update tied to support renewal conversation with usage value."
+    },
+    {
+      "output_id": "O003",
+      "account_id": "A014",
+      "output_type": "Mobile adoption plan",
+      "status": "needs revision",
+      "findings": [
+        "Missing account-specific reference",
+        "No concrete timing or owner",
+        "Too generic for customer-facing use"
+      ],
+      "standards_checked": [
+        "QS001",
+        "QS002",
+        "QS003"
+      ],
+      "revised_version": "Northstar Travel: We see Renewal imminent; adoption issue in mobile app. Next step: assign the owner, confirm timing, and send a measurable update tied to recover mobile onboarding before renewal."
+    },
+    {
+      "output_id": "O004",
+      "account_id": "A017",
+      "output_type": "Reactivation email",
+      "status": "needs revision",
+      "findings": [
+        "Missing account-specific reference",
+        "No concrete timing or owner",
+        "Too generic for customer-facing use"
+      ],
+      "standards_checked": [
+        "QS001",
+        "QS002",
+        "QS006"
+      ],
+      "revised_version": "Quartz Media: We see Low usage and negative sentiment; unclear stakeholder owner. Next step: assign the owner, confirm timing, and send a measurable update tied to re-engage account with low usage and no champion."
+    },
+    {
+      "output_id": "O005",
+      "account_id": "A003",
+      "output_type": "Expansion plan",
+      "status": "needs revision",
+      "findings": [
+        "Missing account-specific reference",
+        "No concrete timing or owner",
+        "Too generic for customer-facing use"
+      ],
+      "standards_checked": [
+        "QS002",
+        "QS004"
+      ],
+      "revised_version": "Cobalt Health: We see Expansion interest from analytics team. Next step: assign the owner, confirm timing, and send a measurable update tied to support analytics-team expansion."
+    },
+    {
+      "output_id": "O006",
+      "account_id": "A010",
+      "output_type": "Internal risk note",
+      "status": "needs revision",
+      "findings": [
+        "Missing account-specific reference",
+        "No concrete timing or owner",
+        "Too generic for customer-facing use"
+      ],
+      "standards_checked": [
+        "QS003",
+        "QS004",
+        "QS005"
+      ],
+      "revised_version": "Juniper Manufacturing: We see Tickets increasing; usage declining in two departments. Next step: assign the owner, confirm timing, and send a measurable update tied to summarize account risk for manager review."
+    },
+    {
+      "output_id": "O007",
+      "account_id": "A012",
+      "output_type": "Permissions guide response",
+      "status": "needs revision",
+      "findings": [
+        "Missing account-specific reference",
+        "No concrete timing or owner",
+        "Too generic for customer-facing use"
+      ],
+      "standards_checked": [
+        "QS001",
+        "QS002"
+      ],
+      "revised_version": "Lumen Energy: We see Many tickets but usage remains strong. Next step: assign the owner, confirm timing, and send a measurable update tied to resolve repeated permissions questions."
+    },
+    {
+      "output_id": "O008",
+      "account_id": "A015",
+      "output_type": "Roadmap response",
+      "status": "needs revision",
+      "findings": [
+        "Missing account-specific reference",
+        "No concrete timing or owner",
+        "Too generic for customer-facing use"
+      ],
+      "standards_checked": [
+        "QS002",
+        "QS004",
+        "QS005"
+      ],
+      "revised_version": "Orchid Telecom: We see Strategic account; integrations roadmap concern. Next step: assign the owner, confirm timing, and send a measurable update tied to respond to strategic roadmap concern."
+    }
+  ],
+  "intervention_plan": {
+    "target_segment": "Mid-Market",
+    "cohort_account_ids": [
+      "A001",
+      "A010",
+      "A014"
+    ],
+    "problem_pattern": "Declining usage is co-occurring with health score deterioration and upcoming renewal risk.",
+    "intervention": "Two week recovery sprint: usage diagnosis, executive status update, admin enablement, and weekly success metric review.",
+    "owners": [
+      "CSM owner",
+      "Support engineering for blockers",
+      "CS ops for reporting"
+    ],
+    "success_metrics": [
+      "active users stabilized or up 10 percent",
+      "open high severity tickets reduced",
+      "health score stops declining"
+    ],
+    "measurement_window_days": 14
+  },
+  "work_queue": [
+    {
+      "type": "account action",
+      "account_id": "A008",
+      "priority": "critical",
+      "route": "escalate recovery plan",
+      "owner": "Morgan Lee"
+    },
+    {
+      "type": "account action",
+      "account_id": "A017",
+      "priority": "critical",
+      "route": "escalate recovery plan",
+      "owner": "Morgan Lee"
+    },
+    {
+      "type": "account action",
+      "account_id": "A014",
+      "priority": "critical",
+      "route": "escalate recovery plan",
+      "owner": "Morgan Lee"
+    },
+    {
+      "type": "account action",
+      "account_id": "A005",
+      "priority": "critical",
+      "route": "escalate recovery plan",
+      "owner": "Morgan Lee"
+    },
+    {
+      "type": "account action",
+      "account_id": "A002",
+      "priority": "critical",
+      "route": "escalate recovery plan",
+      "owner": "Taylor Chen"
+    },
+    {
+      "type": "account action",
+      "account_id": "A004",
+      "priority": "critical",
+      "route": "escalate recovery plan",
+      "owner": "Riley Patel"
+    },
+    {
+      "type": "account action",
+      "account_id": "A010",
+      "priority": "critical",
+      "route": "escalate recovery plan",
+      "owner": "Taylor Chen"
+    },
+    {
+      "type": "account action",
+      "account_id": "A001",
+      "priority": "high",
+      "route": "CSM follow up within 2 business days",
+      "owner": "Taylor Chen"
+    },
+    {
+      "type": "account action",
+      "account_id": "A012",
+      "priority": "high",
+      "route": "CSM follow up within 2 business days",
+      "owner": "Riley Patel"
+    },
+    {
+      "type": "account action",
+      "account_id": "A016",
+      "priority": "medium",
+      "route": "prepare expansion conversation",
+      "owner": "Taylor Chen"
+    },
+    {
+      "type": "ticket",
+      "account_id": "A008",
+      "priority": "High",
+      "route": "escalation",
+      "owner": "Support engineering plus CSM"
+    },
+    {
+      "type": "ticket",
+      "account_id": "A002",
+      "priority": "High",
+      "route": "escalation",
+      "owner": "Support engineering plus CSM"
+    },
+    {
+      "type": "ticket",
+      "account_id": "A014",
+      "priority": "Medium",
+      "route": "escalation",
+      "owner": "Support engineering plus CSM"
+    },
+    {
+      "type": "ticket",
+      "account_id": "A010",
+      "priority": "Medium",
+      "route": "immediate resolution",
+      "owner": "Frontline support"
+    },
+    {
+      "type": "ticket",
+      "account_id": "A012",
+      "priority": "Low",
+      "route": "immediate resolution",
+      "owner": "Frontline support"
+    },
+    {
+      "type": "ticket",
+      "account_id": "A017",
+      "priority": "High",
+      "route": "escalation",
+      "owner": "Support engineering plus CSM"
+    },
+    {
+      "type": "ticket",
+      "account_id": "A005",
+      "priority": "High",
+      "route": "escalation",
+      "owner": "Support engineering plus CSM"
+    },
+    {
+      "type": "ticket",
+      "account_id": "A004",
+      "priority": "Medium",
+      "route": "immediate resolution",
+      "owner": "Frontline support"
+    },
+    {
+      "type": "ticket",
+      "account_id": "A015",
+      "priority": "Medium",
+      "route": "immediate resolution",
+      "owner": "Frontline support"
+    },
+    {
+      "type": "ticket",
+      "account_id": "A001",
+      "priority": "Medium",
+      "route": "scheduled follow up",
+      "owner": "Taylor Chen"
+    },
+    {
+      "type": "ticket",
+      "account_id": "A006",
+      "priority": "Low",
+      "route": "immediate resolution",
+      "owner": "Frontline support"
+    },
+    {
+      "type": "ticket",
+      "account_id": "A003",
+      "priority": "Low",
+      "route": "immediate resolution",
+      "owner": "Frontline support"
+    },
+    {
+      "type": "quality correction",
+      "account_id": "A008",
+      "priority": "medium",
+      "route": "revise before send",
+      "owner": "CSM manager"
+    },
+    {
+      "type": "quality correction",
+      "account_id": "A005",
+      "priority": "medium",
+      "route": "revise before send",
+      "owner": "CSM manager"
+    },
+    {
+      "type": "quality correction",
+      "account_id": "A014",
+      "priority": "medium",
+      "route": "revise before send",
+      "owner": "CSM manager"
+    },
+    {
+      "type": "quality correction",
+      "account_id": "A017",
+      "priority": "medium",
+      "route": "revise before send",
+      "owner": "CSM manager"
+    },
+    {
+      "type": "quality correction",
+      "account_id": "A003",
+      "priority": "medium",
+      "route": "revise before send",
+      "owner": "CSM manager"
+    },
+    {
+      "type": "quality correction",
+      "account_id": "A010",
+      "priority": "medium",
+      "route": "revise before send",
+      "owner": "CSM manager"
+    },
+    {
+      "type": "quality correction",
+      "account_id": "A012",
+      "priority": "medium",
+      "route": "revise before send",
+      "owner": "CSM manager"
+    },
+    {
+      "type": "quality correction",
+      "account_id": "A015",
+      "priority": "medium",
+      "route": "revise before send",
+      "owner": "CSM manager"
+    },
+    {
+      "type": "segment intervention",
+      "account_id": "A001,A010,A014",
+      "priority": "high",
+      "route": "Two week recovery sprint: usage diagnosis, executive status update, admin enablement, and weekly success metric review.",
+      "owner": "CS ops lead"
+    }
+  ],
+  "evaluation": {
+    "passed": true,
+    "missing_owner_count": 0,
+    "unresolved_high_count": 0,
+    "queue_items_checked": 31
+  },
+  "token_usage": [
+    {
+      "stage": "memory_retrieval",
+      "model": "text-embedding-3-small",
+      "input_tokens": 12,
+      "output_tokens": 3,
+      "cost_usd": 2.4e-07
+    },
+    {
+      "stage": "account_review",
+      "model": "Claude Haiku 4.5",
+      "input_tokens": 423,
+      "output_tokens": 681,
+      "cost_usd": 0.003828
+    },
+    {
+      "stage": "prioritization",
+      "model": "GPT-5.4 mini",
+      "input_tokens": 711,
+      "output_tokens": 429,
+      "cost_usd": 0.00246375
+    },
+    {
+      "stage": "inbound_issue_handling",
+      "model": "Claude Haiku 4.5",
+      "input_tokens": 473,
+      "output_tokens": 691,
+      "cost_usd": 0.003928
+    },
+    {
+      "stage": "checkin_support",
+      "model": "GPT-5.4 mini",
+      "input_tokens": 736,
+      "output_tokens": 592,
+      "cost_usd": 0.003216
+    },
+    {
+      "stage": "quality_review",
+      "model": "GPT-5.4 mini",
+      "input_tokens": 367,
+      "output_tokens": 624,
+      "cost_usd": 0.00308325
+    },
+    {
+      "stage": "intervention_planning",
+      "model": "Claude Sonnet 4.6",
+      "input_tokens": 330,
+      "output_tokens": 88,
+      "cost_usd": 0.00231
+    },
+    {
+      "stage": "routing",
+      "model": "Claude Haiku 4.5",
+      "input_tokens": 1771,
+      "output_tokens": 583,
+      "cost_usd": 0.004686
+    },
+    {
+      "stage": "evaluation",
+      "model": "GPT-5.4 mini",
+      "input_tokens": 606,
+      "output_tokens": 11,
+      "cost_usd": 0.000504
+    }
+  ],
+  "measured_total_cost_usd": 0.02401924
+}

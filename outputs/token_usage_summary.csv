@@ -1,0 +1,10 @@
+stage,model,runs,avg_input_tokens,avg_output_tokens,avg_cost_usd
+memory_retrieval,text-embedding-3-small,5,12.0,3.0,2.4e-07
+account_review,Claude Haiku 4.5,5,423.0,681.0,0.003828
+prioritization,GPT-5.4 mini,5,711.0,429.0,0.00246375
+inbound_issue_handling,Claude Haiku 4.5,5,473.0,691.0,0.003928
+checkin_support,GPT-5.4 mini,5,736.0,592.0,0.003216
+quality_review,GPT-5.4 mini,5,367.0,624.0,0.00308325
+intervention_planning,Claude Sonnet 4.6,5,330.0,88.0,0.00231
+routing,Claude Haiku 4.5,5,1771.0,583.0,0.004686
+evaluation,GPT-5.4 mini,5,606.0,11.0,0.000504
